@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="LineageOS/android_device_google_marlin" path="device/google/marlin" remote="github" />
+  <project name="LineageOS/android_kernel_google_marlin" path="kernel/google/marlin" remote="github" />
+ <project name="BootleggersROM-Devices/vendor_google_devices" path="vendor/google_devices" remote="github" revision="pasta" fetch="https://www.github.com/BootleggersROM-Devices" />
+</manifest>
