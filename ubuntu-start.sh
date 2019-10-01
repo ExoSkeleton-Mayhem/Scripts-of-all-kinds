@@ -1,8 +1,56 @@
-#!/bin/bash
-# A script to install all your needed developing packages
-#
-LSB_RELEASE="$(lsb_release -d | cut -d ':' -f 2 | sed -e 's/^[[:space:]]*//')"
-INSTALL_DEVELOPERS_PACKAGES=[[ sudo apt-get install build-essential && apt-get install openjdk-8-jdk && apt-get install python3 && apt-get install python-pip && apt-get install adb && apt-get install fastboot && apt-get install repo && apt-get install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev]]; 
+#!bin/bash/
+
+###########################################
+
+# Bash script to install apps and packages on a new install of (Ubuntu)
+
+# Written by Centurion83@ https://github.com/Centurion83
+
+###########################################
+
+
+## Update packages and sweeten the system
+sudo apt-get update -y
+
+## Git ##
+echo '###Installing Git..'
+sudo apt-get install git -y
+
+# Configuring Git
+echo '###Configuring Git..'
+
+
+
+echo "Enter the Global Username for Git:";
+read GITUSER;
+git config --global user.name "${GITUSER}"
+
+echo "Enter the Global Email for Git:";
+read GITEMAIL;
+git config --global user.email "${GITEMAIL}"
+
+echo 'Git was Configured,Go Forth and Spawn Repos!'
+git config --list
+
+
+## s3cmd ##
+echo '###Installing s3cmd..'
+#Import S3tools signing key:
+wget -O- -q http://s3tools.org/repo/deb-all/stable/s3tools.key | sudo apt-key add -
+# Add the repo to sources.list:
+sudo wget -O/etc/apt/sources.list.d/s3tools.list http://s3tools.org/repo/deb-all/stable/s3tools.list
+# Refresh package cache and install the newest s3cmd:
+sudo apt-get update && sudo apt-get install s3cmd
+
+#s3cmd Configuration
+echo '###Congigure s3cmd..'
+sudo s3cmd --configure
+
+
+!#/bin/bash/
+
+# Installing Repo and placing to path
+echo '###Installing Repo and Bin..'
 echo mkdir -p ~/bin
 echo curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 echo $chmod a+x ~/bin/repo
@@ -10,11 +58,16 @@ echo PATH=~/home/bin:$PATH
 echo | source ~/.profile
 #!/usr/bin/env bash
 
-# Copyright (C) 2018 Harsh 'MSF Jarvis' Shandilya
-# Copyright (C) 2018 Akhil Narang
-# SPDX-License-Identifier: GPL-3.0-only
+echo 'Repo was Installed!'
 
-# Script to setup an AOSP Build environment on Ubuntu and Linux Mint
+## build_env setup ##
+echo '###Setting up your build_env..'
+LSB_RELEASE="$(lsb_release -d | cut -d ':' -f 2 | sed -e 's/^[[:space:]]*//')"
+INSTALL_DEVELOPERS_PACKAGES=[[ sudo apt-get install build-essential && apt-get install openjdk-8-jdk && apt-get install python3 && apt-get install python-pip && apt-get install adb && apt-get install fastboot && apt-get install repo && apt-get install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev]]; 
+
+echo 'Part1 finished!'
+
+echo '###part2 build-env..'
 
 LATEST_MAKE_VERSION="4.2.1"
 LATEST_CCACHE_VERSION="3.4.2+226_gc4613eb"
@@ -94,6 +147,8 @@ else
     bash ./setup/ninja.sh
 fi
 
+echo 'Part2 Complete!'
+
 #!/usr/bin/env bash
 
 
@@ -105,3 +160,6 @@ make -j"$(nproc)"
 sudo make install
 rm -rf "${PWD}"
 cd - || exit 1
+
+
+
