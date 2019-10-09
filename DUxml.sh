@@ -1,6 +1,6 @@
 #!/bin/bash
 #Shell script to pull a specific xml file
-'<?xml version="1.0" encoding="UTF-8"?>
+echo -en "\033[38;2;220;20;60m'<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="DirtyUnicorns/android_device_google_marlin" path="device/google/marlin" remote="github" revision="p9x" />
   <project name="DirtyUnicorns/android_kernel_google_marlin" path="kernel/google/marlin" remote="github" revision="p9x" />
@@ -8,5 +8,5 @@
   <project name="DirtyUnicorns/android_vendor_pixelgapps" path="vendor/pixelgapps" remote="gitlab" revision="p9x" />
   <project name="DirtyUnicorns/android_device_google_bonito" path="device/google/bonito" remote="github" revision="p9x" />
   <project name="DirtyUnicorns/android_device_google_bonito-sepolicy" path="device/google/bonito-sepolicy" remote="github" revision="p9x" />
-  <project name="DirtyUnicorns/android_kernel_google_bonito" path="kernel/google/bonito" remote="github" revision="p9x" />
-</manifest>' >>/home/centurion/Documents/local_manifest
+  <project name="DirtyUnicorns/android_kernel_google_bonito" path="kernel/google/bonito" remote="github" revision="p9x" 
+</manifest> />\033[0m\n"  >>/home/centurion/Documents/local_manifest.xml
