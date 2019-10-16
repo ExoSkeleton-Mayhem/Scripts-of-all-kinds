@@ -95,8 +95,6 @@ else
 fi
 
 #!/usr/bin/env bash
-
-
 git clone git@github.com:WestCoastRomS/ccache.git
 cd ccache || exit 1
 ./autogen.sh
@@ -105,3 +103,20 @@ make -j"$(nproc)"
 sudo make install
 rm -rf "${PWD}"
 cd - || exit 1
+
+echo installing starlabs theme
+sudo add-apt-repository ppa:starlabs/ppa
+sudo apt update
+sudo apt install starlabstheme
+echo git clone https://github.com/StarLabsLtd/StarLabsTheme.git
+
+echo git config --global user.email westcoastroms@gmail.com
+echo git config --global user.name Eric Tony
+echo ssh-keygen -t rsa -b 4096 -C "westcoastroms@gmail.com"
+echo eval "$(ssh-agent -s)"
+echo ssh-add ~/.ssh/id_rsa
+
+echo sudo apt-get update && apt-get upgrade -y
+sleep 10
+echo sudo reboot
+
