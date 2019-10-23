@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <project name="BootleggersROM-Devices/device_google_marlin" path="device/google/marlin" remote="github" revision="pasta" />
-  <project name="BootleggersROM-Devices/kernel_google_marlin" path="kernel/google/marlin" remote="github" revision="pasta" />
-  <project name="BootleggersROM-Devices/vendor_google_devices" path="vendor/google_devices" remote="github" revision="pasta" />
-</manifest>  
-

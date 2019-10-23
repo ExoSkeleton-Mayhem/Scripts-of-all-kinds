@@ -1,0 +1,1 @@
+Install-it-all does just that, everything you need for delopers and all the bells and whistles for ubuntu 18.04 lts. To use this script open terminal, and type chmod +x install-it-all.sh then type ./install-it-all.sh press  enter and hang tight. 
