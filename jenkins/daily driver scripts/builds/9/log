@@ -1,0 +1,65 @@
+Started by user [8mha:////4Nk/gxqv/hw8tvB87QaK5d74kZ9MUF+MibP6Zqi2wuOGAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZB/dLi1CL95NS8ktKizPw8C2MAvkdTIMYAAAA=[0mEric
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/DailyDriver
+[DailyDriver] $ /bin/bash /tmp/jenkins2616438632398273839.sh
+Ign:1 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 http://dl.google.com/linux/chrome/deb stable Release
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:5 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Ign:6 http://pkg.jenkins-ci.org/debian binary/ InRelease
+Hit:7 http://ppa.launchpad.net/starlabs/ppa/ubuntu bionic InRelease
+Hit:9 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:10 http://pkg.jenkins-ci.org/debian binary/ Release
+Hit:12 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease
+Reading package lists...
+Ign:1 http://dl.google.com/linux/chrome/deb stable InRelease
+Ign:2 http://pkg.jenkins-ci.org/debian binary/ InRelease
+Hit:3 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:5 http://dl.google.com/linux/chrome/deb stable Release
+Hit:6 http://pkg.jenkins-ci.org/debian binary/ Release
+Hit:7 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:8 http://ppa.launchpad.net/starlabs/ppa/ubuntu bionic InRelease
+Hit:10 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:12 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages have been kept back:
+  fwupd
+The following packages will be upgraded:
+  snapd xserver-xorg-hwe-18.04 xserver-xorg-input-all-hwe-18.04
+  xserver-xorg-video-all-hwe-18.04
+4 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Need to get 13.7 MB of archives.
+After this operation, 1,794 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Abort.
+/tmp/jenkins2616438632398273839.sh: line 6: ./script: No such file or directory
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following NEW packages will be installed:
+  libtss2-esys0 libtss2-udev libxmlb1
+The following packages will be upgraded:
+  fwupd snapd xserver-xorg-hwe-18.04 xserver-xorg-input-all-hwe-18.04
+  xserver-xorg-video-all-hwe-18.04
+5 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 16.9 MB of archives.
+After this operation, 12.1 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Abort.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Finished: SUCCESS

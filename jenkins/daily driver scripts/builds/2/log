@@ -1,0 +1,80 @@
+Started by user [8mha:////4Nk/gxqv/hw8tvB87QaK5d74kZ9MUF+MibP6Zqi2wuOGAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZB/dLi1CL95NS8ktKizPw8C2MAvkdTIMYAAAA=[0mEric
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/DailyDriver
+[DailyDriver] $ /bin/bash /tmp/jenkins2409675893547261437.sh
+Ign:1 http://pkg.jenkins-ci.org/debian binary/ InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 http://pkg.jenkins-ci.org/debian binary/ Release
+Hit:4 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Get:6 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Hit:8 http://ppa.launchpad.net/starlabs/ppa/ubuntu bionic InRelease
+Hit:9 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease
+Fetched 163 kB in 1s (141 kB/s)
+Reading package lists...
+Ign:1 http://pkg.jenkins-ci.org/debian binary/ InRelease
+Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Hit:3 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:4 http://pkg.jenkins-ci.org/debian binary/ Release
+Hit:5 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:6 http://ppa.launchpad.net/starlabs/ppa/ubuntu bionic InRelease
+Get:8 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Hit:9 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease
+Fetched 163 kB in 1s (144 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages have been kept back:
+  fwupd
+The following packages will be upgraded:
+  libefiboot1 libefivar1 libfwupd2 libgcrypt20 libgnutls30 libhogweed4
+  libnettle6 libnss-myhostname libnss-systemd libp11-kit0 libpam-systemd
+  libsystemd0 libudev1 p11-kit p11-kit-modules systemd systemd-sysv
+  ubuntu-drivers-common udev
+19 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Need to get 6,908 kB of archives.
+After this operation, 1,188 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Abort.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following NEW packages will be installed:
+  libtss2-esys0 libtss2-udev libxmlb1
+The following packages will be upgraded:
+  fwupd libefiboot1 libefivar1 libfwupd2 libgcrypt20 libgnutls30 libhogweed4
+  libnettle6 libnss-myhostname libnss-systemd libp11-kit0 libpam-systemd
+  libsystemd0 libudev1 p11-kit p11-kit-modules systemd systemd-sysv
+  ubuntu-drivers-common udev
+20 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 10.1 MB of archives.
+After this operation, 11.5 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Abort.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 20 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 20 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Del udev 237-3ubuntu10.31 [1,102 kB]
+Del systemd-sysv 237-3ubuntu10.31 [11.7 kB]
+Del amd64-microcode 3.20191021.1ubuntu0.18.04.2 [32.8 kB]
+Del systemd 237-3ubuntu10.31 [2,904 kB]
+Del libnss-systemd 237-3ubuntu10.31 [105 kB]
+Del libnss-myhostname 237-3ubuntu10.31 [34.1 kB]
+Del libudev1 237-3ubuntu10.31 [53.9 kB]
+Del libsystemd0 237-3ubuntu10.31 [204 kB]
+Del libpam-systemd 237-3ubuntu10.31 [108 kB]
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+E: Invalid operation get
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

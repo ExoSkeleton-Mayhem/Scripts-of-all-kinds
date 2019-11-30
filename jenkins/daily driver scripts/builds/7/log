@@ -1,0 +1,66 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/DailyDriver
+[DailyDriver] $ /bin/bash /tmp/jenkins6750185271973000740.sh
+Ign:1 http://dl.google.com/linux/chrome/deb stable InRelease
+Get:2 http://dl.google.com/linux/chrome/deb stable Release [943 B]
+Hit:3 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+Get:4 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B]
+Get:5 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Ign:7 http://pkg.jenkins-ci.org/debian binary/ InRelease
+Get:8 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,117 B]
+Hit:9 http://pkg.jenkins-ci.org/debian binary/ Release
+Get:11 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Hit:12 http://ppa.launchpad.net/starlabs/ppa/ubuntu bionic InRelease
+Hit:13 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease
+Fetched 255 kB in 2s (147 kB/s)
+Reading package lists...
+Ign:1 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:2 http://dl.google.com/linux/chrome/deb stable Release
+Hit:3 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:4 http://ppa.launchpad.net/starlabs/ppa/ubuntu bionic InRelease
+Get:5 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Ign:7 http://pkg.jenkins-ci.org/debian binary/ InRelease
+Get:8 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Hit:9 http://pkg.jenkins-ci.org/debian binary/ Release
+Hit:10 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease
+Get:12 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Fetched 252 kB in 1s (170 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages have been kept back:
+  fwupd
+The following packages will be upgraded:
+  snapd
+1 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Need to get 13.7 MB of archives.
+After this operation, 1,794 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Abort.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following NEW packages will be installed:
+  libtss2-esys0 libtss2-udev libxmlb1
+The following packages will be upgraded:
+  fwupd snapd
+2 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 16.9 MB of archives.
+After this operation, 12.1 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Abort.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Finished: SUCCESS

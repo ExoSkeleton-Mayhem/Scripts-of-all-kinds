@@ -1,0 +1,85 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/DailyDriver
+[DailyDriver] $ /bin/bash /tmp/jenkins8320970090536785250.sh
+Get:1 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Hit:2 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+Get:3 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Hit:4 http://ppa.launchpad.net/starlabs/ppa/ubuntu bionic InRelease
+Ign:5 http://pkg.jenkins-ci.org/debian binary/ InRelease
+Hit:6 http://pkg.jenkins-ci.org/debian binary/ Release
+Hit:7 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease
+Get:8 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:9 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [575 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [799 kB]
+Get:12 http://security.ubuntu.com/ubuntu bionic-security/main i386 Packages [406 kB]
+Get:13 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [38.6 kB]
+Get:14 http://security.ubuntu.com/ubuntu bionic-security/main DEP-11 48x48 Icons [17.6 kB]
+Get:15 http://security.ubuntu.com/ubuntu bionic-security/main DEP-11 64x64 Icons [41.5 kB]
+Get:16 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [42.2 kB]
+Get:17 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 48x48 Icons [16.4 kB]
+Get:18 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 64x64 Icons [108 kB]
+Get:19 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2,464 B]
+Get:20 http://us.archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [617 kB]
+Get:21 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [295 kB]
+Get:22 http://us.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [73.8 kB]
+Get:23 http://us.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 64x64 Icons [143 kB]
+Get:24 http://us.archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [22.0 kB]
+Get:25 http://us.archive.ubuntu.com/ubuntu bionic-updates/restricted i386 Packages [9,296 B]
+Get:26 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,028 kB]
+Get:27 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [994 kB]
+Get:28 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [264 kB]
+Get:29 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 48x48 Icons [199 kB]
+Get:30 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 64x64 Icons [436 kB]
+Get:31 http://us.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [8,556 B]
+Get:32 http://us.archive.ubuntu.com/ubuntu bionic-updates/multiverse i386 Packages [6,956 B]
+Get:33 http://us.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2,468 B]
+Get:34 http://us.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [7,972 B]
+Fetched 6,405 kB in 2s (3,428 kB/s)
+Reading package lists...
+Ign:1 http://pkg.jenkins-ci.org/debian binary/ InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 http://pkg.jenkins-ci.org/debian binary/ Release
+Hit:4 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:5 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:6 http://ppa.launchpad.net/starlabs/ppa/ubuntu bionic InRelease
+Hit:8 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:9 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages have been kept back:
+  fwupd
+The following packages will be upgraded:
+  snapd
+1 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Need to get 13.7 MB of archives.
+After this operation, 1,794 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Abort.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following NEW packages will be installed:
+  libtss2-esys0 libtss2-udev libxmlb1
+The following packages will be upgraded:
+  fwupd snapd
+2 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 16.9 MB of archives.
+After this operation, 12.1 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Abort.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Del snapd 2.40+18.04 [13.3 MB]
+Finished: SUCCESS
