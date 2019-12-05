@@ -224,5 +224,26 @@ echo | source ~/.profile
 
 
 echo 'Repo was Installed!'
+sudo apt-get install eclipse-titan -y
+git clone https://github.com/enthought/bzip2-1.0.6.git
+cd bzip2-1.0.6
+sudo make
+sudo make install
+
+#############################################################################
+
+# Downloading and installing the ndk
+git clone https://github.com/glennrp/libpng
+cd libpng
+export TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/$HOST_TAG
+export AR=$TOOLCHAIN/bin/aarch64-linux-android-ar
+export AS=$TOOLCHAIN/bin/aarch64-linux-android-as
+export CC=$TOOLCHAIN/bin/aarch64-linux-android21-clang
+export CXX=$TOOLCHAIN/bin/aarch64-linux-android21-clang++
+export LD=$TOOLCHAIN/bin/aarch64-linux-android-ld
+export RANLIB=$TOOLCHAIN/bin/aarch64-linux-android-ranlib
+export STRIP=$TOOLCHAIN/bin/aarch64-linux-android-strip
+./configure --host aarch64-linux-android
+make
 
 #ending
